@@ -1,0 +1,79 @@
+.container {
+    background-color: turquoise;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: left;
+    height: 100%;
+    position:fixed
+}
+
+.etiqueta {
+    display:flex;
+    flex-direction: column;
+    /* align-items:center; */
+}
+
+.botonRegresar{
+    width: 12rem;
+    height: 3rem;
+    margin: 1rem 1rem;
+    font-family: 'Monaco';
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botonCrear {
+    width: 12rem;
+    height: 5rem;
+    margin: 2rem 1rem 3rem 1rem;
+    font-family: 'Monaco';
+    font-size: x-large;
+    border-radius: 10px;
+    border: solid 3px rgb(167, 71, 90);
+    background-color: rgb(8, 139, 17);
+    color: rgb(50, 39, 174);
+    font-weight: bold ;
+    cursor: pointer;
+
+}
+
+.botonResetear {
+    width: 12rem;
+    height: 3rem;
+    margin: 1rem;
+    font-family: 'Monaco';
+    font-size: large;
+    border-radius: 10px;
+    border: solid 3px rgb(114, 12, 91);
+    background-color: rgb(98, 68, 180);
+    color: rgb(241, 231, 241);
+    cursor: pointer;
+
+}
+
+.label {
+    font-family: 'Monaco';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    width: 8rem;
+    height: 2rem;
+    margin: 0 4rem;
+    border: solid 3px coral;
+    background-color: blanchedalmond;
+    color: purple;
+    border-radius: 10px;
+}
+
+.topImg {
+    width: 12rem;
+    margin: 2rem 2rem;
+}
+
+.botImg {
+    width: 12rem;
+    margin: 2rem 2rem;
+}

@@ -1,0 +1,71 @@
+.notFound {
+    height: 50rem;
+    width: 70rem;
+    margin: 10rem 0 0 16rem;
+    cursor: pointer;
+}
+
+
+.container {
+    margin-left: 20rem; 
+}
+
+.secondary {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+
+.pagina {
+    width: 3rem;
+    border: solid 2px yellowgreen;
+    background-color: whitesmoke;
+    cursor: pointer;
+    list-Style: none;
+    display: grid;
+    place-content: center;
+    border-radius: 10px;
+
+}
+
+.paginasDer {
+    display: flex; 
+    gap: 2rem;
+    margin: 0 3rem;
+    justify-Content: center;
+    flex-direction: column;
+    position: fixed;
+    right: 5rem;
+
+}
+
+.paginasIzq {
+    display: flex; 
+    gap: 2rem;
+    margin: 0 3rem;
+    justify-Content: center;
+    flex-direction: column;
+    position: fixed;
+    left: 18.5rem;
+
+}
+
+.imagen {
+    width: 2rem
+}
+
+.allCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-Content: center;
+    align-items: center;
+    height: 75rem;
+    width: 120rem;
+    margin: 0 -100rem 0 0;
+}
+
+/* .cardAlone {
+
+} */

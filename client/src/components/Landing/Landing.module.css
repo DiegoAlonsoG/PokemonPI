@@ -1,0 +1,60 @@
+
+.container {
+    background-image: url(../../img/fondoLanding.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100wh;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-family: 'Monaco';
+    position: fixed;
+    top: 15rem;
+    left: 10rem;
+}
+
+.textoSecun {
+    margin: 3rem 0;
+}
+
+.toHome {
+    width: 15rem;
+    height: 6rem;
+    margin: 1rem 1rem;
+    font-family: 'Monaco';
+    font-size: xx-large;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10rem;
+    right: 63rem;
+}
+
+/* .lkin {
+    position: fixed;
+    height: 2rem;
+    width: 2rem;
+    top: 2rem;
+    right: 100rem;
+}
+
+.github {
+    position: fixed;
+    height: 4rem;
+    width: 4rem;
+    top: 2rem;
+    right: 8rem;
+} */
+
+.logo {
+    position: fixed;
+    height: 33rem;
+    width: 67rem;
+    top: 2rem;
+    right: 16rem;
+}

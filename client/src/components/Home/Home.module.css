@@ -1,0 +1,26 @@
+.container {
+    background-image: url(../../img/wallpaperHome.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: fixed; */
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    flex-direction: row;
+}
+
+.loading {
+    margin: 0 0 0 0;
+}
+
+.loadGif {
+    height: 30rem;
+    width: 30rem;
+}
+
+.loadText {
+    font-family: 'Monaco';
+    font-size: xx-large;
+    margin: 10rem;
+}

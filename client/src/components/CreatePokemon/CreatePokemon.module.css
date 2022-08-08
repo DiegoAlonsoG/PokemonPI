@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    background-image: url(../../img/creationWallpaper.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100wh;
+}
+
+.nav {
+    background-color: turquoise;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    height: 100%;
+    position:fixed
+}
+
+.theForm {
+    margin-left: 20rem;
+}
+
+.topImg {
+    width: 12rem;
+    margin: 2rem 2rem;
+}
+
+.botImg {
+    width: 12rem;
+    margin: 22rem 2rem 2rem 2rem;
+}
+
+.botonRegresar {
+    width: 12rem;
+    height: 3rem;
+    margin: 18rem 0 1rem 0;
+    font-family: 'Monaco';
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.botonHome {
+    width: 12rem;
+    height: 3rem;
+    margin: 1rem 1rem;
+    font-family: 'Monaco';
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}

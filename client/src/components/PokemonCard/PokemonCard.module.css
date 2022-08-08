@@ -1,0 +1,316 @@
+.container {
+    border: solid 3px #d1495b;
+    width: 20rem;
+    margin: 2rem 2rem;
+    padding: 0.5rem;
+    height: 24rem;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fcd5ce;
+    /* z-index: -2; */
+}
+
+.nameCard {
+    text-transform: capitalize;
+    color: brown;
+    font-size:xx-large;
+}
+
+.types {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.imagen {
+    height: 15rem;
+    width: 15rem;
+}
+
+.imagenFondo {
+    height: 400px;
+    width: 400px;
+    margin: -240px -260px -260px 0;
+    opacity: 0.1;
+}
+
+/* .detalles { */
+    /* z-index: 1; */
+    /* position: sticky; */
+    /* margin: -23rem */
+/* } */
+
+/* .fondo { */
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+/* } */
+
+.typeCard {
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px black;
+    border-radius: 15px;
+    text-transform: capitalize;
+}
+
+.bug {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #3a5a40;
+    background-color: #90a955;
+    color: #3a5a40;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.dark {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #212529;
+    background-color: #343a40;
+    color: #adb5bd;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.dragon {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #480ca8;
+    background-color: #8338ec;
+    color: #ff5c8a;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.electric {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #ee9b00;
+    background-color: #ffbe0b;
+    color: #bc6c25;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.fairy {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #ff477e;
+    background-color: #ffcad4;
+    color: #ff477e;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.fighting {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #a44a3f;
+    background-color: #dd7230;
+    color: #a44a3f;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.fire {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #c81d25;
+    background-color: #ff8700;
+    color: #c81d25;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.flying {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #531cb3;
+    background-color: #b8b8ff;
+    color: #531cb3;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.ghost {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #d8d8f6;
+    background-color: #8d6b94;
+    color: #d8d8f6;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.grass {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #29524a;
+    background-color: #0ead69;
+    color: #29524a;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.ground {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #2e1f27;
+    background-color: #995f48;
+    color: #2e1f27;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.ice {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #90e0ef;
+    background-color: #caf0f8;
+    color: #00b4d8;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.normal {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #5e503f;
+    background-color: #cebebe;
+    color: #5e503f;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.poison {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #531cb3;
+    background-color: #944bbb;
+    color: #531cb3;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.psychic {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #ff99d1;
+    background-color: #e899dc;
+    color: #ff6495;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.rock {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #473335;
+    background-color: #8b786d;
+    color: #473335;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.shadow {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #212529;
+    background-color: #343a40;
+    color: #adb5bd;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.steel {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #446378;
+    background-color: #a9bcd0;
+    color: #446378;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.unknown {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #0b090a;
+    background-color: #faf9f9;
+    color: #0b090a;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
+
+.water {
+    text-transform: capitalize;
+    width: 6rem;
+    padding: 0.25rem 0;
+    margin: 0 1rem 1.5rem 1rem;
+    border: solid 3px #1982c4;
+    background-color: #4cc9f0;
+    color: #1982c4;
+    font-family: 'Monaco';
+    font-weight: bold;
+    border-radius: 15px;
+} 
