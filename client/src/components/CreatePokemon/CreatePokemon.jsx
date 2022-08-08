@@ -6,7 +6,7 @@ import style from './CreatePokemon.module.css'
 import botNav from "../../img/pkball.png"
 import topNav from "../../img/mainlogo.png"
 
-// test
+// test2
 
 export default function Nav () {
     return <div className={style.container}> 
