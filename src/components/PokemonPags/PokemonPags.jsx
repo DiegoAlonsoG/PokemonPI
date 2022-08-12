@@ -18,8 +18,6 @@ export default function Paginado() {
     }, [paginas])
     function changeState (e) {
         setLocal(Number(e.target.id))
-        // console.log(e.target)
-        // console.log(e.target.id)
     }
 
     let pagInicial = [];
@@ -79,14 +77,14 @@ export default function Paginado() {
         <div className={style.allCards}>
         {pkmPorPagina.map((pkm) => {
             return (
-            <Link to={`/pokemon/${pkm.id}`}>
                 <PokemonCard
                 key={pkm.id}
                 name={pkm.name}
-                image={pkm.image}
+                imageRegular={pkm.imageRegular}
+                imageShiny={pkm.imageShiny}
                 types={pkm.types}
+                id={pkm.id}
                 />
-            </Link>
         )})}
         </div>
 

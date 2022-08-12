@@ -10,6 +10,25 @@
     /* z-index: -2; */
 }
 
+.button {
+    height: auto;
+    width: auto;
+    position: relative;
+    color: goldenrod;
+    display: flex;
+    justify-content: left;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+.detalles {
+    /* border: 1px solid black; */
+    margin-top: -2rem;
+}
+
 .nameCard {
     text-transform: capitalize;
     color: brown;

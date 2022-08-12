@@ -1,16 +1,47 @@
+import { useState } from 'react'
 import style from './PokemonCard.module.css'
+import {BsStars} from 'react-icons/bs'
+import {MdRestartAlt} from 'react-icons/md'
+import { Link } from 'react-router-dom';
 
-export default function PokemonCard ({name, image, types}) {
-    // const types = useSelector((state) => state.types)
+
+export default function PokemonCard ({id, name, imageRegular, imageShiny, types}) {
+
+    const [shiny, setShiny] = useState(false)
+
+    function onClickChange () {
+        if (shiny) {
+            return setShiny(false)
+        }
+        setShiny(true)
+    }
+
     return <div className={style.container}>
 
+        <div className={style.button} onClick={onClickChange}>
+            {
+                shiny ? 
+                <MdRestartAlt className={style.icon}/> :
+                <BsStars className={style.icon}/>
+            }
+            </div>
+            <Link to={`/pokemon/${id}`}>
         <div className={style.fondo}>
-            <img className={style.imagenFondo} src={image} alt="la imagen aquí"/>
+            { shiny ?
+            <img className={style.imagenFondo} src={imageShiny} alt="la imagen aquí"/> :
+            <img className={style.imagenFondo} src={imageRegular} alt="la imagen aquí"/>
+
+            }
         </div>
 
         <div className={style.detalles}>
             <h1 className={style.nameCard}>{name}</h1>
-            <img className={style.imagen} src={image} alt="la imagen aquí"/>
+            {
+            shiny ?
+            <img className={style.imagen} src={imageShiny} alt="la imagen aquí"/> :
+            <img className={style.imagen} src={imageRegular} alt="la imagen aquí"/>
+            }
+
             <div className={style.types}>
                 {types.map((hey) => {
                     if (hey === "bug") {
@@ -117,6 +148,7 @@ export default function PokemonCard ({name, image, types}) {
                 })}
             </div>
         </div>
+        </Link>
 
     </div>
 }

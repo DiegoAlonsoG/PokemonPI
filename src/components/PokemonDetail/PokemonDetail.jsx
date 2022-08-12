@@ -35,15 +35,18 @@ export default function PokemonDetail () {
                 <img className={style.botImg} src={botNav} alt='notfound'/>
 
                 </div>
+
             {
 
                 detalle ?
 
                 <div className={style.main}>
-                    <img className={style.imageBackOne} src={detalle.image} alt="la imagen aquí"/>
+
+                    <img className={style.imageBackOne} src={detalle.imageRegular} alt="la imagen aquí"/>
+
             <div className={style.container}>
                 <h2 className={style.nameDetail}>{detalle.name}</h2>
-                <img className={style.image} src={detalle.image} alt="la imagen aquí"/>
+                <img className={style.image} src={detalle.imageRegular} alt="la imagen aquí"/>
                 <div className={style.types}>
                     <div className={style.labelTypes}>
                     Types: 
@@ -157,7 +160,8 @@ export default function PokemonDetail () {
                 </div>
                     
 
-
+{
+    detalle.createdBy !== "Api" &&
                 <div className={style.stat}> <label className={style.label}>
                     Created By: </label>
                     
@@ -165,6 +169,7 @@ export default function PokemonDetail () {
                     {detalle.createdBy}</div>
                 </div>
 
+}
 
                 <div className={style.stat}> <label className={style.label}>
                     Life: </label>
@@ -210,7 +215,7 @@ export default function PokemonDetail () {
                 
             </div> 
             
-            <img className={style.imageBackTwo} src={detalle.image} alt="la imagen aquí"/>
+            <img className={style.imageBackTwo} src={detalle.imageRegular} alt="la imagen aquí"/>
             </div>
             
             :
