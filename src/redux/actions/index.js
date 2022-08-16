@@ -12,25 +12,28 @@ export const CREATE_POKEMON = "CREATE_POKEMON";
 
 export const getAllPokemons = () => {
     return async function (dispatch) {
-        return fetch(`http://localhost:3001/api/pokemons`)
-        .then (respuesta => respuesta.json())
-        .then (rpta => {return dispatch({type: GET_ALL_POKEMONS, payload:rpta })})
+        // const rpta = await axios.get(`/api/pokemons`)
+        // return dispatch({type: GET_ALL_POKEMONS, payload:rpta.data }) 
+        const respuesta = await axios.get(`/api/pokemons`)
+        // .then (respuesta => respuesta.json())
+        return dispatch({type: GET_ALL_POKEMONS, payload:respuesta.data})
+        // .then (rpta => {return dispatch({type: GET_ALL_POKEMONS, payload:rpta })})
+        // .catch((error)=>{
+        //     console.log(error)})
     };
 };
 export const searchPokemons = (search) => {
     return async function (dispatch) {
-        return axios.get(`http://localhost:3001/api/pokemons?name=${search}`)
+        const respuesta = await axios.get(`/api/pokemons?name=${search}`)
         // .then (respuesta => respuesta.json())
-        .then (rpta => {return dispatch({type: SEARCH_POKEMON, payload:rpta})})
-        .catch((error)=>{
-            console.log(error)})
+        return dispatch({type: SEARCH_POKEMON, payload:respuesta.data})
     }
 };
 export const getPokemonDetail = (id) => {
     return async (dispatch) => {
-        return fetch(`http://localhost:3001/api/pokemons/${id}`)
-        .then (respuesta => respuesta.json())
-        .then (rpta => {return dispatch({type: GET_POKEMON_DETAIL, payload:rpta })})
+        const respuesta = await axios.get(`/api/pokemons/${id}`)
+        // .then (respuesta => respuesta.json())
+        return dispatch({type: GET_POKEMON_DETAIL, payload:respuesta.data })
     };
 };
 export const sortByName = (orderName) => {
@@ -59,12 +62,12 @@ export const filterByType = (filterType) => {
 };
 export const getAllTypes = () => {
     return async function (dispatch) {
-        return fetch(`http://localhost:3001/api/types`)
-        .then (respuesta => respuesta.json())
-        .then (rpta => {return dispatch({type: GET_ALL_TYPES, payload:rpta })})
+        const respuesta = await axios.get(`/api/types`)
+        // .then (respuesta => respuesta.json())
+        return dispatch({type: GET_ALL_TYPES, payload:respuesta.data })   
     };
 };
-export function postPokemon(payload) {
-	return axios.post("http://localhost:3001/api/pokemons", payload)
+export async function postPokemon(payload) {
+	const xxx = await axios.post("/api/pokemons", payload)
 }
 
